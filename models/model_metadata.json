@@ -1,0 +1,46 @@
+{
+    "model": "RandomForestClassifier",
+    "target": "diabetes",
+    "features": {
+        "numerical": [
+            "bmi",
+            "age",
+            "blood_glucose_level",
+            "HbA1c_level"
+        ],
+        "categorical": [
+            "gender",
+            "hypertension",
+            "heart_disease",
+            "smoking_history"
+        ]
+    },
+    "dataset": {
+        "filename": "diabetes_prediction_dataset_cleaned_v2.csv",
+        "sha256": "ad632e12878fab91c6f2e5d33f952ecb793de5bedc41f44286ba72d436d97b27",
+        "rows": 96146
+    },
+    "split": {
+        "train": 57687,
+        "validation": 19229,
+        "test": 19230
+    },
+    "val_metrics": {
+        "accuracy": 0.9710333350668261,
+        "precision": 0.9855072463768116,
+        "recall": 0.6816037735849056,
+        "f1_score": 0.8058556988497735,
+        "roc_auc": 0.9707698266288153,
+        "confusion_matrix": [
+            [
+                17516,
+                17
+            ],
+            [
+                540,
+                1156
+            ]
+        ]
+    },
+    "random_state": 42
+}
