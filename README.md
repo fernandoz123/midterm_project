@@ -67,7 +67,7 @@ curl -s http://localhost:9696/predict \
 ```
 ### Run the docker deployment 
 ```bash
-docker build -t api-diabetes .
+docker build -t api-diabetes:1.0 .
 docker run -d -p 9696:9696 --name diabetes-container api-diabetes:1.0
 ```
 
